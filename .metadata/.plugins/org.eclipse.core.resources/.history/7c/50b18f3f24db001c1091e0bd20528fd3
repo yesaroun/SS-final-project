@@ -1,0 +1,10 @@
+package com.test.mvc;
+
+public class MemberDTO
+{
+	// 주요 속성 구성
+	private int mid;
+	private String name, telephone;
+	
+	//getter / setter 구성
+}

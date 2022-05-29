@@ -1,0 +1,6 @@
+package com.test.mvc;
+
+public interface IMemberDAO
+{
+	// 전체 인원수 확인 메소드 선언
+}

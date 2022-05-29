@@ -1,0 +1,52 @@
+@charset "UTF-8";
+* 
+{
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body 
+{
+  margin: 0;
+  background-color: #1BBC9B;
+}
+
+.login-form 
+{
+	width: 300px;
+	background-color: #eeff1;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+.text-field 
+{
+  font-size: 14px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.submit-btn 
+{
+  font-size: 14px;
+  background-color: #1bbc9b;
+  color: white;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+}
+
+.links 
+{
+}
+
+.links a {
+  font-size: 12px;
+}
