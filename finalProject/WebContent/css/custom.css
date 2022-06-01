@@ -1,0 +1,15 @@
+/*나눔고딕*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+/*Black Han Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Gothic&display=swap');
+
+.navbar-brand
+{
+  font-family: 'Black Han Sans';
+  color: #1B5E20;
+}
+
+.navbar 
+{
+  border-bottom: #43A047 3px solid;
+}
