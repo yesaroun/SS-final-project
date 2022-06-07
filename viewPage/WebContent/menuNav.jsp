@@ -4,6 +4,7 @@
 	String cp = request.getContextPath();
 %>
 <!DOCTYPE HTML>
+<html>
 <head>
     <title>커뮤니티 웹 사이트</title>
     <meta charset="UTF-8">

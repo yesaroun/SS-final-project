@@ -10,7 +10,7 @@
 .navbar
 {
 	background-color: #1fa766;
-/* 	background-color: #198754; */
+	position: fixed;
 }
 
 .navbar-brand
@@ -135,9 +135,9 @@ body
 
 #main
 {
-    height: 100vh;
+    height: auto;
     /*너비가 큰 경우 scroll이 생기는 태그임*/
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 @media (max-width: 768px)
 {

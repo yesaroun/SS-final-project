@@ -22,9 +22,10 @@
     <div class="container-fluid">
     
     	<div class="row d-flex d-md-block flex-nowrap wrapper">
-            <nav class="col-md-2 float-left col-1 pl-0 pr-0 collapse width show" id="sidebar">
+            <nav class="col-md-2 float-left col-1 pl-0 pr-0 collapse width show" id="sidebar" >
             	<!-- ○ 좌측 메뉴바 include -->
                 <jsp:include page="./menuNav.jsp"></jsp:include>
+            	
             </nav>
         </div>
 	
@@ -200,6 +201,7 @@
 				</div>
 			</section>
 		</div>
+			
 	</div>
 
 

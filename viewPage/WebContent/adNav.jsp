@@ -16,7 +16,7 @@
 </head>
 <body>
 
-<!-- 네비게이션바 ===================================================== -->
+	<!-- 네비게이션바 ===================================================== -->
 	<nav class="navbar navbar-expand-lg navbar-dark">
 		<a class="navbar-brand" href="./index.jsp">MONEYLOG</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -45,7 +45,6 @@
 	<script src="./js/bootstrap.min.js"></script>
 	<!-- MDB 라이브러리 추가하기 <== chart!!!! **** -->
 	<script src="./js/mdb.min.js"></script>
-	
 	
 </body>
 </html>
