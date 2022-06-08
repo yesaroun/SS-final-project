@@ -160,7 +160,10 @@
 	</div>
 	<div class="calndar-title m-2" style="text-align: center;">
 		<%=selectYear %>년 <%=selectMonth %>월<br />
-		<h1>내 가계부</h1>
+		<div class="page-header">
+			<h1>내 가계부</h1>
+		</div>
+		
 		<table style="margin: auto;">
 			<tr>
 				<th>
