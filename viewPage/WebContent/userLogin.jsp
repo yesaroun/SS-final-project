@@ -18,11 +18,15 @@
 	<!-- ○ 상단 네비게이션 include -->
 	<jsp:include page="./guestNavTerm.jsp"></jsp:include>
 
-	<div class="container-fixed">
-		<main id="main" class="main pt-5">
-            <h1 id="login-main">MONEYLOG</h1>
-			<div class="p-3" id="login-form">
-				<form action="">
+	<div class="container">
+		<div class="row pt-5" style="place-items: center; display: grid;">
+			<div style="text-align: center;">
+				<h1 id="login-main">MONEYLOG</h1>
+			</div>
+		</div>
+		<div class="row pt-2" style="place-items: center; display: grid;">
+			<div id="login-form" style="place-items: center; display: grid;">
+				<form action=""> 
 					<input type="text" name="id" class="text-field form-control" placeholder="아이디" />
                     <input type="password" name="pw" class="text-field form-control" placeholder="비밀번호" />
 					<button type="submit" class="btn btn-primary" id="login-btn" style="background-color: #1fa766;">로그인</button>
@@ -33,7 +37,7 @@
                     </div>
 				</form>
 			</div>
-		</main>
+		</div>
 	</div>
 	<script src="./js/jquery-3.2.1.min.js"></script>
 	<script src="./js/popper.min.js"></script>

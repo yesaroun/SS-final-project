@@ -14,7 +14,7 @@
 </head>
 <body>
 	<div class="list-group border-0 card text-center text-md-left">
-		<h1 class="list-group-item d-inline-block collapsed" data-parent="#sidebar">머니리뷰</h1>
+		<h1 class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><span class="d-none d-md-inline ml-1"> 머니리뷰</span></h1>
 		
 		<a href="#" class="list-group-item d-inline-block collapsed" data-toggle="collapse"
          data-parent="#sidebar" aria-expanded="false">

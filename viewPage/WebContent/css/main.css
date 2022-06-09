@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6
 /*
     동의 약관
 */
-#joinForm > *
+#joinForm *
 {
     margin: 0;
     padding:0;
@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6
 {
     list-style:none
 }
-#joinForm > a
+#joinForm a
 {
     text-decoration: none;
 }
@@ -194,9 +194,8 @@ ul.join_box
 /*
 	달력
 */
-#calendar
+.calendar-border
 {
-	margin-left: auto;
-	margin-right: auto;
+	border: 1px solid black;
 }
 

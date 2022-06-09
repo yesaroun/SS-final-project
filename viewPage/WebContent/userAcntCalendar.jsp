@@ -71,7 +71,7 @@
 	
 	// 달력 그리기
 	String calStr = "";
-	calStr += "<table border='1' style='margin: auto; min-width: 1000px;'>";
+	calStr += "<table border='1'  class='col-12' id='calendar'>";
 	
 	// 요일 이름 발생
 	calStr += "<tr>";
@@ -127,7 +127,6 @@
 	calStr += "</table>";
 	
 	
-	
 %>
 <!DOCTYPE html>
 <html>
@@ -147,67 +146,131 @@
 	<!-- 상단 네비게이션바 -->
 	<jsp:include page="./guestNavTerm.jsp"></jsp:include>
 	
-	<div class="row m-3">
-		<span>날짜 선택 &nbsp;</span>
-		<form action="" method="post">
-			<select id="year" name="year" onchange="formCalendar(this.form)">
-				<%=yOptions %>
-			</select> 년
-			<select id="month" name="month" onchange="formCalendar(this.form)">
-				<%=mOptions %>
-			</select> 월
-		</form>
-	</div>
-	<div class="calndar-title m-2" style="text-align: center;">
-		<%=selectYear %>년 <%=selectMonth %>월<br />
-		<div class="page-header">
-			<h1>내 가계부</h1>
+	<div class="container">
+		<div class="row" >
+			<div class="col-12" >
+				<div>
+					<span>날짜 선택 &nbsp;</span>
+					<form action="" method="post">
+						<select id="year" name="year" onchange="formCalendar(this.form)">
+							<%=yOptions %>
+						</select> 년
+						<select id="month" name="month" onchange="formCalendar(this.form)">
+							<%=mOptions %>
+						</select> 월
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 m-2" style="text-align: center;">
+				<%=selectYear %>년 <%=selectMonth %>월<br />
+				<div class="page-header">
+					<h1>내 가계부</h1>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<table class="col-6" style="text-align: center;" >
+				<tr>
+					<th style="color: #f79900; font-size: 30px">
+						■ 수입
+					</th>
+				</tr>
+				<tr>
+					<td>1,200,000</td>
+				</tr>
+			</table>
+			<table class="col-6" style="text-align: center;" >
+				<tr>
+					<th style="color: #03a313; font-size: 30px">
+						■ 지출	
+					</th>
+				</tr>
+				<tr>
+					<td>100,000</td>
+				</tr>
+			</table>
+		</div>
+		<div class="row">
+			<div class="col-6" style="text-align: left;">
+				<button type="submit" class="btn btn-primary" style="background-color: #1fa766;">
+					이월
+				</button> 
+				2,000,000
+			</div>
+			<div class="col-6" style="text-align: right;">
+				<button type="submit" class="btn btn-primary" style="background-color: #1fa766;">
+					잔액
+				</button> 
+				4,000,000
+			</div>
 		</div>
 		
-		<table style="margin: auto;">
-			<tr>
-				<th>
-					<a href="">
-						<h3>이월</h3>
-					</a>
-				</th>
-				<th>&nbsp;&nbsp;&nbsp;</th>
-				<th>
-					<a href="">
-						<h3>수입</h3>
-					</a>
-				</th>
-				<th>&nbsp;&nbsp;&nbsp;</th>
-				<th>
-					<a href="">
-						<h3>지출</h3>
-					</a>
-				</th>
-				<th>&nbsp;&nbsp;&nbsp;</th>
-				<th>
-					<a href="">
-						<h3>잔액</h3>
-					</a>
-				</th>
-			</tr>
-			<tr>
-				<td>2,000,000</td>
-				<td>&nbsp;&nbsp;&nbsp;</td>
-				<td>12,000,000</td>
-				<td>&nbsp;&nbsp;&nbsp;</td>
-				<td>1,000,000</td>
-				<td>&nbsp;&nbsp;&nbsp;</td>
-				<td>32,000,000</td>
-			</tr>
-		</table>
+		<div class="row">
+			<!-- <div class="col-12" id="calendar"> -->
+				<!-- 달력 -->
+				<%=calStr %>
+		</div>
+		
 	</div>
-	<div id="calendar">
-		<!-- 달력 -->
-		<%=calStr %>
-	</div>
+	
+	
+	<!-- 데이터 받기 -->
+	<%
+	   // 내 수입/지출
+	int data1 = 30;
+	%>   
+               
+	<div class="container mt-5 mb-5">
+		<div class="row">
+
+        	<!-- 나의 수입대비지출 -->
+            <div class="col-11">
+
+            	<div class="list-group">
+
+                	<!-- 나의 수입대비지출 프로그레스바 -->
+                    <div class="progress" style="background-color: white;">
+
+                    	<div class="progress-bar progress-bar bg-white progress-bar-animated"
+                             role="progressbar"
+                             style="width: <%=( data1)-5 %>%;"
+                             aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                        <img style="width: 100px;" src="./img2/duck.gif">
+					</div>
+                </div>
+            </div>
+        </div>
+     	<div class="row">
+
+        	<!-- 나의 수입대비지출 -->
+            <div class="col-11">
+
+            	<div class="list-group">
 
 
+                	<!-- 머니리뷰 프로그레스바 -->
+                    <div class="progress" style="height: 40px; background-color: #1fa766;">
 
+                    	<div class="progress-bar progress-bar bg-warning progress-bar-animated"
+                             role="progressbar"
+                             style="font-size: 17pt; width: <%=data1%>%;"
+                             aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                             <%=data1%>%
+                        </div>
+					</div>
+                </div>
+            </div>
+            <div class="col-1">
+            	<button type="submit" class="btn btn-primary" style="background-color: #1fa766; height: 40px;">
+					리뷰하기
+				</button> 
+            </div>
+        </div>
+    </div>
+	
 
 	<script src="./js/jquery-3.2.1.min.js"></script>
 	<script src="./js/popper.min.js"></script>

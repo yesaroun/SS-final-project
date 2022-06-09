@@ -14,7 +14,7 @@
 </head>
 <body>
 	<div class="list-group border-0 card text-center text-md-left">
-		<h1 class="list-group-item d-inline-block collapsed" data-parent="#sidebar">고객지원</h1>
+		<h1 class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><span class="d-none d-md-inline">고객지원</span></h1>
 		<a href="#" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
 		    <img style="width: 20px;" src="./img2/home.svg"><span class="d-none d-md-inline"> 머니로그 소개</span>
 		</a>
