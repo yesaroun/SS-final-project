@@ -97,17 +97,17 @@
 		
 		// 함수 만들어서 날을 넣고 꺼내야함 이거 jstl로 수정하기?		
 		if(selectYear==nowYear && selectMonth == nowMonth && i==nowDay && week%7==0) //-- 토요일인 오늘
-			calStr += "<td class='nowSat'>"+ i + "<br>수입 : 1,200<br>지출 : 1,200</td>";
+			calStr += "<td class='nowSat'>"+ i + "<br><span class='mobile'>수입 : 1,200<br>지출 : 1,200</span></td>";
 		else if (selectYear==nowYear && selectMonth == nowMonth && i==nowDay && week%7==1) //-- 일요일인 오늘
-			calStr += "<td class='nowSun'>" + i + "<br>수입 : 1,200<br>지출 : 1,200</td>";
+			calStr += "<td class='nowSun'>" + i + "<br><span class='mobile'>수입 : 1,200<br>지출 : 1,200</span></td>";
 		else if(selectYear==nowYear && selectMonth == nowMonth && i==nowDay)		//-- 평일인 오늘
-			calStr += "<td class='now'>" + i  + "<br>수입 : 1,200<br>지출 : 1,200</td>";
+			calStr += "<td class='now'>" + i  + "<br><span class='mobile'>수입 : 1,200<br>지출 : 1,200</span></td>";
 		else if (week%7==0)															//-- 오늘이 아닌 토요일
-			calStr += "<td class='sat'>" + i + "<br>수입 : 1,200<br>지출 : 1,200</td>";
+			calStr += "<td class='sat'>" + i + "<br><span class='mobile'>수입 : 1,200<br>지출 : 1,200</span></td>";
 		else if (week%7==1)															//-- 오늘이 아닌 일요일
-			calStr += "<td class= 'sun'>" + i + "<br>수입 : 1,200<br>지출 : 1,200</td>";
+			calStr += "<td class= 'sun'>" + i + "<br><span class='mobile'>수입 : 1,200<br>지출 : 1,200</span></td>";
 		else																		//-- 오늘이 아닌 평일
-			calStr += "<td>" + i + "<br>수입 : 1,200<br>지출 : 1,200</td>";
+			calStr += "<td>" + i + "<br><span class='mobile'>수입 : 1,200<br>지출 : 1,200</span></td>";
 			
 		if(week%7 == 0)
 			calStr += "</tr><tr>";
@@ -221,7 +221,7 @@
 	   // 내 수입/지출
 	int data1 = 30;
 	%>   
-               
+	
 	<div class="container mt-5 mb-5">
 		<div class="row">
 
@@ -244,13 +244,9 @@
             </div>
         </div>
      	<div class="row">
-
-        	<!-- 나의 수입대비지출 -->
             <div class="col-11">
 
             	<div class="list-group">
-
-
                 	<!-- 머니리뷰 프로그레스바 -->
                     <div class="progress" style="height: 40px; background-color: #1fa766;">
 
@@ -263,11 +259,18 @@
 					</div>
                 </div>
             </div>
-            <div class="col-1">
+            <div class="col-1" style="place-items: left; display: grid;">
             	<button type="submit" class="btn btn-primary" style="background-color: #1fa766; height: 40px;">
 					리뷰하기
 				</button> 
             </div>
+        </div>
+        <div class="row mt-3">
+        	<div class="col-12">
+        		<button type="submit" class="btn btn-primary" style="background-color: #1fa766; width: 100%;">
+					이번달 분석하기
+				</button> 
+        	</div>
         </div>
     </div>
 	

@@ -1,6 +1,6 @@
 window.onload = function () {
     const checkAll = document.getElementById('chkAll');
-    const chks = document.querySelectorAll('.chk');  
+    const chks = document.querySelectorAll('.chk'); 
     const chkBoxLength = chks.length;
     
     checkAll.addEventListener('click', function(event) {
