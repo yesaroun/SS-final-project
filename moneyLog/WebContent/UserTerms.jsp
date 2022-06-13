@@ -22,7 +22,7 @@
     <!-- 회원가입 상단 아이콘 -->
 	<div class="container-fixed m-4">
         <div class="row sign-up-form">
-            <h2 id="sign-up-intro">이용약관</h2>
+            <h2 id="sign-up-intro" >이용약관</h2>
             <hr>
         </div>
         <div class="row mt-3">
